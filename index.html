@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeSeries Forecasting System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">LOGO</div>
+    <h1>TimeSeries Forecasting System</h1>
+    <nav>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#importar-dados">Importar Dados</a>
+      <a href="#modelos-previsao">Modelos de Previsão</a>
+      <a href="#analise-resultados">Análise de Resultados</a>
+      <a href="#configuracoes">Configurações</a>
+      <div class="user-menu">Usuário
+        <div class="user-dropdown">
+          <a href="#perfil">Perfil</a>
+          <a href="#logout">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <div class="main-container">
+    <!-- Barra Lateral -->
+    <aside class="sidebar">
+      <h2>Filtros de Dados</h2>
+      <div>
+        <label>Seleção de Período:</label>
+        <input type="date"> - <input type="date">
+      </div>
+      <div>
+        <label>Regiões/Localidades:</label>
+        <select>
+          <option>Selecione uma Região</option>
+        </select>
+      </div>
+      <div>
+        <label>Variáveis:</label>
+        <select>
+          <option>CO₂</option>
+          <option>Temperatura</option>
+          <option>Precipitação</option>
+        </select>
+      </div>
+      <div>
+        <label>Tipo de Modelos:</label>
+        <select>
+          <option>ARIMA</option>
+          <option>SARIMA</option>
+          <option>LSTM</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- Área Principal -->
+    <main>
+      <!-- Seção 1: Visão Geral dos Dados -->
+      <section id="dashboard">
+        <h2>Visão Geral dos Dados</h2>
+        <div class="chart">[Gráfico de Série Temporal]</div>
+        <button>Atualizar Dados</button>
+        <div class="kpis">
+          <p>Erro Médio Absoluto (MAE): [valor]</p>
+          <p>RMSE: [valor]</p>
+          <p>Precisão: [valor]</p>
+        </div>
+      </section>
+
+      <!-- Seção 2: Configuração de Modelos de Previsão -->
+      <section id="modelos-previsao">
+        <h2>Configuração de Modelos de Previsão</h2>
+        <label for="modelo">Modelo:</label>
+        <select id="modelo">
+          <option>ARIMA</option>
+          <option>Suavização Exponencial</option>
+          <option>Redes Neurais</option>
+        </select>
+        <div class="parametros">
+          <p>Parâmetros personalizáveis:</p>
+          <input type="text" placeholder="Parâmetro 1">
+          <input type="text" placeholder="Parâmetro 2">
+        </div>
+      </section>
+
+      <!-- Seção 3: Análise dos Resultados -->
+      <section id="analise-resultados">
+        <h2>Análise dos Resultados</h2>
+        <div class="metricas">
+          <p>MAE: [valor]</p>
+          <p>RMSE: [valor]</p>
+          <p>MAPE: [valor]</p>
+        </div>
+        <div class="comparison-chart">[Comparação entre Modelos]</div>
+        <div class="error-chart">[Gráfico de Erros]</div>
+        <button>Download dos Resultados</button>
+      </section>
+
+      <!-- Seção de Anotações -->
+      <section id="anotacoes">
+        <h2>Anotações</h2>
+        <textarea placeholder="Escreva suas observações aqui..."></textarea>
+      </section>
+    </main>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>TimeSeries Forecasting System - Versão 1.0</p>
+    <nav>
+      <a href="#documentacao">Documentação</a>
+      <a href="#faq">FAQ</a>
+      <a href="#suporte">Suporte Técnico</a>
+    </nav>
+  </footer>
+</body>
+</html>
